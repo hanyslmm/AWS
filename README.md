@@ -38,56 +38,62 @@ Flask application running in docker container and port mapping 80:5000 to open a
 
 Steps to Configure Server on AWS:
 
-Start a new Ubuntu Linux server instance on Amazon Lightsail.
+1- Start a new Ubuntu Linux server instance on Amazon Lightsail.
 
-Follow the instructions provided to SSH into your server. Secure your server:
+2- Follow the instructions provided to SSH into your server.
 
-Update all currently installed packages.
+Secure your server:
 
-Change the SSH port from 22 to 2200. Make sure to configure the Lightsail firewall to allow it.
+1- Update all currently installed packages.
 
-Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+2- Change the SSH port from 22 to 2200.
+
+3- Make sure to configure the Lightsail firewall to allow it.
+
+4- Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 
 Warning: When changing the SSH port, make sure that the firewall is open for port 2200 first, so that you don't lock yourself out of the server. When you change the SSH port, the Lightsail instance will no longer be accessible through the web app 'Connect using SSH' button. The button assumes the default port is being used. There are instructions on the same page for connecting from your terminal to the instance. Connect using those instructions and then follow the rest of the steps.
 
-Create a new user account named grader:
+5- Create a new user account named grader:
 
 Give grader the permission to sudo: cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader; and edit it with garder username
 
-Create an SSH key pair for grader using the ssh-keygen tool. Prepare to deploy your project.
+6- Create an SSH key pair for grader using the ssh-keygen tool.
 
-Configure the local timezone to UTC:
+Then Prepare to deploy your project.
+
+7- Configure the local timezone to UTC:
 
 timedatectl list-timezones
 timedatectl set-timezone UTC
 
-Install packages to allow apt to use a repository over HTTPS:
+8- Install packages to allow apt to use a repository over HTTPS:
 $ sudo apt-get install 
 apt-transport-https 
 ca-certificates 
 curl 
 software-properties-common
 
-Add Docker’s official GPG key:
+9- Add Docker’s official GPG key:
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 
-Verify that you now have the key with the fingerprint: 
+10- Verify that you now have the key with the fingerprint: 
 sudo apt-key fingerprint 0EBFCD88
 
-Use the following command to set up the stable repository. You always need the stable repository, even if you want to install builds from the edge or test repositories as well. 
+11- Use the following command to set up the stable repository. You always need the stable repository, even if you want to install builds from the edge or test repositories as well. 
 
 sudo add-apt-repository 
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu 
 $(lsb_release -cs) 
 stable"
 
-Install the latest version of Docker CE, or go to the next step to install a specific version:
+12- Install the latest version of Docker CE, or go to the next step to install a specific version:
 $ sudo apt-get install docker-ce
 
-Pull Item Catalog docker image:
+13- Pull Item Catalog docker image:
 sudo docker pull hanyslmm/crud_webapp:AWS
 
-run a container using a following command:
+14- run a container using a following command:
 sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/crud_webapp:AWS python3 project.py
 
 server now up and you can run check.
