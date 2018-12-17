@@ -109,7 +109,7 @@ stable"
 
 ### server now up and running..
 
-# A list of used third-party resources as references to build this task is required:
+## A list of used third-party resources as references to build this project:
 
 ### How to write good REDME File:
 
