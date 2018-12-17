@@ -106,6 +106,8 @@ sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/cru
 server now up and you can run check.
 
 
+https://changelog.com/posts/a-beginners-guide-to-creating-a-readme
+
 https://www.tecmint.com/disable-root-login-in-linux/
 
 https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade
