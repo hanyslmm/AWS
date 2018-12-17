@@ -97,3 +97,6 @@ sudo docker pull hanyslmm/crud_webapp:AWS
 sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/crud_webapp:AWS python3 project.py
 
 server now up and you can run check.
+
+
+https://www.tecmint.com/disable-root-login-in-linux/
