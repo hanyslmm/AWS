@@ -63,7 +63,9 @@ Warning: When changing the SSH port, make sure that the firewall is open for por
 
 5. Create a new user account named grader:
 
-Give grader the permission to sudo: cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader; and edit it with garder username
+Give grader the permission to sudo:
+
+*cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader; and edit it with garder username
 
 6. Create an SSH key pair for grader using the ssh-keygen tool.
 
@@ -82,27 +84,28 @@ curl
 software-properties-common
 
 9. Add Docker’s official GPG key:
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
+
+* curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 
 10. Verify that you now have the key with the fingerprint: 
 sudo apt-key fingerprint 0EBFCD88
 
 11. Use the following command to set up the stable repository. You always need the stable repository, even if you want to install builds from the edge or test repositories as well. 
 
-sudo add-apt-repository 
+*sudo add-apt-repository 
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu 
 $(lsb_release -cs) 
 stable"
 
 12. Install the latest version of Docker CE, or go to the next step to install a specific version:
-$ sudo apt-get install docker-ce
+* sudo apt-get install docker-ce
 
 13. Pull Item Catalog docker image:
-sudo docker pull hanyslmm/crud_webapp:AWS
+* sudo docker pull hanyslmm/crud_webapp:AWS
 
 14. run a container using a following command:
 
-sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/crud_webapp:AWS python3 itemcatalog/project.py
+* sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/crud_webapp:AWS python3 itemcatalog/project.py
 
 ### server now up and running.
 
