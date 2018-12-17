@@ -1,4 +1,4 @@
-# Project Summary:
+## Project Summary:
 
 A baseline installation of a Linux server and prepare it to host a web application. also, secure the server from a number of attack vectors, install and configure a database server, and deploy one of my existing web applications onto it. I learned how to access, secure, and perform the initial configuration of a bare-bones Linux server. and learned how to install and configure a web and database server and actually host a web application. Deploying your web applications to a publicly accessible server is the first step in getting users Properly securing your application ensures your application remains stable and that your user’s data is safe
 
@@ -32,6 +32,7 @@ http://18.195.116.175.xip.io/
 
 sudo apt-get update --> updates the list of available packages and their versions,
 but it does not install or upgrade any packages.
+
 sudo apt-get upgrade --> actually installs newer versions of the packages you have.
 After updating the lists, the package manager knows about available updates
 for the software you have installed. This is why we first update.
