@@ -8,13 +8,13 @@ IP address:
 
 Grader Key attached with repository:
 
-grader passphrase: hansylmm
+grader passphrase: hanyslmm
 
 web app URL:
 
 http://18.195.116.175.xip.io/
 
-User Management:
+# User Management:
 
 1- The SSH key submitted with the project can be used to log in as grader on the server.
 
@@ -22,7 +22,7 @@ User Management:
 
 3- The grader user can run commands using sudo to inspect files that are readable only by root.
 
-Security:
+# Security:
 
 1- Only allow connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 
@@ -32,7 +32,7 @@ Security:
 
 4- SSH is hosted on port 2200.
 
-Application Functionality:
+# Application Functionality:
 
 Flask application running in docker container and port mapping 80:5000 to open app through browser default port.
 
