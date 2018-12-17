@@ -107,3 +107,5 @@ server now up and you can run check.
 
 
 https://www.tecmint.com/disable-root-login-in-linux/
+
+https://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade
