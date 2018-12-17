@@ -63,9 +63,9 @@ Warning: When changing the SSH port, make sure that the firewall is open for por
 
 5. Create a new user account named grader:
 
-Give grader the permission to sudo:
+* Give grader the permission to sudo:
 
-*cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader; and edit it with garder username
+put 'grader' user is in '/etc/sudoers.d/grader' file :arrow_right: 'grader ALL=(ALL) NOPASSWD:ALL'
 
 6. Create an SSH key pair for grader using the ssh-keygen tool.
 
@@ -92,7 +92,7 @@ sudo apt-key fingerprint 0EBFCD88
 
 11. Use the following command to set up the stable repository. You always need the stable repository, even if you want to install builds from the edge or test repositories as well. 
 
-*sudo add-apt-repository 
+* sudo add-apt-repository 
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu 
 $(lsb_release -cs) 
 stable"
