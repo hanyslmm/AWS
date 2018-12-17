@@ -131,8 +131,9 @@ https://www.sqlite.org/cli.html
 https://www.codecademy.com/articles/sql-commands
 
 
-### change private key passphrase:
+### SSH configuration:
 
+https://www.youtube.com/watch?v=HcwK8IWc-a8
 https://serverfault.com/questions/50775/how-do-i-change-my-private-key-passphrase
 
 ### Deal with Docker containers:
