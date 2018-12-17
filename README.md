@@ -1,4 +1,4 @@
-## Project Summary:
+# Project Summary:
 
 A baseline installation of a Linux server and prepare it to host a web application. also, secure the server from a number of attack vectors, install and configure a database server, and deploy one of my existing web applications onto it. I learned how to access, secure, and perform the initial configuration of a bare-bones Linux server. and learned how to install and configure a web and database server and actually host a web application. Deploying your web applications to a publicly accessible server is the first step in getting users Properly securing your application ensures your application remains stable and that your user’s data is safe
 
@@ -67,7 +67,7 @@ Give grader the permission to sudo: cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-
 
 6- Create an SSH key pair for grader using the ssh-keygen tool.
 
-Then Prepare to deploy your project.
+## Then Prepare to deploy your project.
 
 7- Configure the local timezone to UTC:
 
