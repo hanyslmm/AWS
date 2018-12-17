@@ -109,6 +109,8 @@ stable"
 
 ### server now up and running.
 
+# A list of used third-party resources as references to build this task is required:
+
 ### How to write good REDME File:
 
 https://classroom.udacity.com/courses/ud777
