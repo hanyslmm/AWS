@@ -107,7 +107,7 @@ stable"
 
 * sudo docker run -it -p 80:5000 --name itemcatalog --hostname server hanyslmm/crud_webapp:AWS python3 itemcatalog/project.py
 
-### server now up and running.
+### server now up and running..
 
 # A list of used third-party resources as references to build this task is required:
 
