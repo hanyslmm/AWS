@@ -111,7 +111,33 @@ stable"
 
 ## A list of used third-party resources as references to build this project:
 
+### SQLALchemy ORM:
+
+https://www.sqlalchemy.org/
+
+### Flask Framework:
+
+http://flask.pocoo.org/
+
+
+### Amazon web services:
+
+https://aws.amazon.com/
+
+### Deal with running sqlite server commands:
+
+https://www.sqlite.org/cli.html
+
+https://www.codecademy.com/articles/sql-commands
+
+
+### change private key passphrase:
+
+https://serverfault.com/questions/50775/how-do-i-change-my-private-key-passphrase
+
 ### Deal with Docker containers:
+
+https://youtu.be/DgoKjlDteEA
 
 
 ### How to write good REDME File:
