@@ -71,11 +71,11 @@ Give grader the permission to sudo: cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-
 
 7. Configure the local timezone to UTC:
 
-timedatectl list-timezones
-timedatectl set-timezone UTC
+* timedatectl list-timezones
+* timedatectl set-timezone UTC
 
 8. Install packages to allow apt to use a repository over HTTPS:
-$ sudo apt-get install 
+* sudo apt-get install 
 apt-transport-https 
 ca-certificates 
 curl 
