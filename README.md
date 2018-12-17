@@ -67,7 +67,7 @@ Give grader the permission to sudo: cp /etc/sudoers/ cp /etc/sudoers.d/90-cloud-
 
 6- Create an SSH key pair for grader using the ssh-keygen tool.
 
-## Then Prepare to deploy your project.
+### Then Prepare to deploy the project.
 
 7- Configure the local timezone to UTC:
 
