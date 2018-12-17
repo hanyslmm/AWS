@@ -30,6 +30,12 @@ http://18.195.116.175.xip.io/
 
 3- All system packages have been updated to most recent versions.
 
+sudo apt-get update --> updates the list of available packages and their versions,
+but it does not install or upgrade any packages.
+sudo apt-get upgrade --> actually installs newer versions of the packages you have.
+After updating the lists, the package manager knows about available updates
+for the software you have installed. This is why we first update.
+
 4- SSH is hosted on port 2200.
 
 # Application Functionality:
@@ -42,7 +48,7 @@ Steps to Configure Server on AWS:
 
 2- Follow the instructions provided to SSH into your server.
 
-Secure your server:
+# Secure your server:
 
 1- Update all currently installed packages.
 
