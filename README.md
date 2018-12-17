@@ -117,6 +117,10 @@ https://changelog.com/posts/a-beginners-guide-to-creating-a-readme
 
 https://en.wikipedia.org/wiki/Markdown
 
+https://fileinfo.com/extension/markdown
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
+
 ### Disable remote root login:
 
 https://www.tecmint.com/disable-root-login-in-linux/
